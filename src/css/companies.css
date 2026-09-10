@@ -1,0 +1,130 @@
+
+/* ===================================================
+   COMPANIES SECTION - MOBILE FIRST
+=================================================== */
+
+.companies {
+    width: 100%;
+
+    padding:
+        var(--spacing-vertical)
+        var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.companies-container {
+    width: 100%;
+    max-width: 110rem;
+
+    text-align: center;
+}
+
+
+/* ===================================================
+   TÍTULO
+=================================================== */
+
+.companies-title {
+    margin-bottom: 3.2rem;
+
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: var(--white);
+}
+
+
+/* ===================================================
+   GRID DE EMPRESAS
+=================================================== */
+
+.companies-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.4rem 3.2rem;
+}
+
+
+/* ===================================================
+   EMPRESA
+=================================================== */
+
+.company-item {
+    display: flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    color: var(--white);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    opacity: 0.9;
+
+    transition:
+        opacity 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+}
+
+
+.company-item:hover {
+    opacity: 1;
+
+    transform: translateY(-0.2rem);
+}
+
+
+/* ===================================================
+   LOGO
+=================================================== */
+
+.company-item img {
+    display: block;
+
+    width: auto;
+    height: 2.4rem;
+
+    object-fit: contain;
+}
+
+
+/* ===================================================
+   TABLET E DESKTOP - 768px+
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .companies-title {
+        font-size: 4rem;
+    }
+
+
+    .companies-grid {
+        justify-content: space-between;
+
+        gap: 4rem;
+    }
+
+}
+
+
+/* ===================================================
+   TELAS GRANDES - 1024px+
+=================================================== */
+
+@media (min-width: 1024px) {
+
+    .companies-title {
+        font-size: 4.4rem;
+    }
+
+}
