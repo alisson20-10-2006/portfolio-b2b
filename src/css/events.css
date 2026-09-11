@@ -1,0 +1,276 @@
+/* ===================================================
+   EVENTS SECTION
+=================================================== */
+
+.events-section {
+    width: 100%;
+
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    background-color: var(--white, #ffffff);
+
+    /* Linha roxa superior */
+    border-top: 0.6rem solid var(--purple-600, #9333ea);
+}
+
+
+/* ===================================================
+   CONTAINER
+=================================================== */
+
+.events-container {
+    width: 100%;
+    max-width: 110rem;
+
+    margin: 0 auto;
+}
+
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.events-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.6rem;
+
+    margin-bottom: 3.2rem;
+
+    text-align: center;
+}
+
+.events-title {
+    font-size: clamp(3.2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.15;
+
+    color: var(--blue-gray-900, #0f172a);
+}
+
+
+/* ===================================================
+   EXPLORE LINK
+=================================================== */
+
+.explore-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: var(--purple-600, #9333ea);
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.explore-link:hover {
+    color: var(--purple-700, #7e22ce);
+
+    transform: translateX(0.4rem);
+}
+
+.explore-link:focus-visible {
+    outline: 0.2rem solid var(--purple-600, #9333ea);
+    outline-offset: 0.4rem;
+}
+
+
+/* ===================================================
+   EVENTS GRID
+=================================================== */
+
+.events-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3.2rem;
+}
+
+
+/* ===================================================
+   EVENT CARD
+=================================================== */
+
+.event-card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ===================================================
+   CARD IMAGE
+=================================================== */
+
+.card-image-wrapper {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    margin-bottom: 1.6rem;
+
+    overflow: hidden;
+
+    border-radius: 1.2rem;
+}
+
+.card-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover .card-image {
+    transform: scale(1.04);
+}
+
+
+/* ===================================================
+   CARD BADGE
+=================================================== */
+
+.card-badge {
+    position: absolute;
+
+    top: 1.2rem;
+    left: 1.2rem;
+
+    padding: 0.4rem 1rem;
+
+    border-radius: 0.6rem;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    backdrop-filter: blur(0.4rem);
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    color: var(--purple-700, #7e22ce);
+}
+
+
+/* ===================================================
+   CARD CONTENT
+=================================================== */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-category {
+    margin-bottom: 0.6rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: var(--blue-gray-600, #475569);
+}
+
+.card-title {
+    margin-bottom: 1.6rem;
+
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+
+    color: var(--blue-gray-900, #0f172a);
+}
+
+
+/* ===================================================
+   BUY TICKETS LINK
+=================================================== */
+
+.buy-tickets-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    color: var(--purple-600, #9333ea);
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.buy-tickets-link:hover {
+    color: var(--purple-700, #7e22ce);
+
+    transform: translateX(0.4rem);
+}
+
+.buy-tickets-link:focus-visible {
+    outline: 0.2rem solid var(--purple-600, #9333ea);
+    outline-offset: 0.4rem;
+}
+
+
+/* ===================================================
+   ARROW
+=================================================== */
+
+.arrow {
+    font-size: 1.4rem;
+}
+
+
+/* ===================================================
+   TABLET AND DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .events-section {
+        padding: 6rem 4rem;
+    }
+
+
+    /* Header horizontal */
+
+    .events-header {
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-bottom: 4rem;
+
+        text-align: left;
+    }
+
+
+    /* Grid com três colunas */
+
+    .events-grid {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 2.4rem;
+    }
+
+}
