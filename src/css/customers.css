@@ -1,0 +1,28 @@
+.customers-title {
+    font-size: clamp(3.2rem, 5vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--white, #ffffff);
+    margin-bottom: 1.6rem;
+}
+
+.customers-title .pink-box .highlight {
+    display: inline-block;
+    padding: 0 0.4rem;
+
+    background-color: var(--rose, #e11d48);
+    color: var(--white, #ffffff);
+}
+
+.customers-description {
+    margin: 0 auto 2.4rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--blue-gray-300, #94a3b8);
+}
+
+.customers-link:focus-visible {
+    outline: 0.2rem solid var(--purple-400, #c084fc);
+    outline-offset: 0.4rem;
+}
