@@ -1,0 +1,134 @@
+/* ===================================================
+   SPEED SECTION
+=================================================== */
+
+.speed {
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    display: flex;
+    justify-content: center;
+}
+
+.speed-container {
+    width: 100%;
+    max-width: 110rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3.2rem;
+
+    text-align: center;
+}
+
+
+/* ===================================================
+   IMAGE
+=================================================== */
+
+.speed-image {
+    width: 100%;
+    max-width: 48rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.speed-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    object-fit: contain;
+}
+
+
+/* ===================================================
+   CONTENT
+=================================================== */
+
+.speed-content {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.speed-tag {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+
+    color: var(--white, #ffffff);
+    text-transform: uppercase;
+}
+
+.speed-title {
+    margin-bottom: 1.6rem;
+
+    font-size: clamp(3.2rem, 5vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: var(--white, #ffffff);
+}
+
+.speed-description {
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    color: var(--blue-gray-300, #94a3b8);
+}
+
+
+/* ===================================================
+   TABLET AND DESKTOP
+=================================================== */
+
+@media (min-width: 768px) {
+
+    .speed-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        gap: 6rem;
+
+        text-align: left;
+    }
+
+
+    /* Texto à esquerda */
+
+    .speed-content {
+        order: 1;
+        flex: 1;
+
+        max-width: 50rem;
+    }
+
+
+    /* Imagem à direita */
+
+    .speed-image {
+        order: 2;
+        flex: 1.2;
+
+        max-width: 58rem;
+
+        justify-content: flex-end;
+    }
+
+
+    .speed-description {
+        margin: 0;
+
+        font-size: 1.6rem;
+    }
+
+}
